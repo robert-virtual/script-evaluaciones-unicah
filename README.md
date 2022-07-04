@@ -5,11 +5,9 @@
 ```js
 let inputs = document.querySelectorAll('input[type="radio"')
 let calificacion = 4 // malo
-inputs.forEach((_e, i) => {
-  if ((i + 1) % 5 == 0) {
-    inputs[i - calificacion].checked = true
-  }
-})
+for (let i = 4; i < inputs.length; i += 5) {
+  inputs[i - calificacion].checked = true
+}
 ```
 > cambia el valor de "calificacion" segun la calificacion que gustas dar:
 * 0 exelente
