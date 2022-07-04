@@ -8,7 +8,6 @@ let inputs = document.querySelectorAll('input[type="radio"')
 // cambia el valor de esta variable segun la calificacion que quieres dar
 let calificacion = 4 // malo
 
-
 inputs.forEach((_e, i) => {
   if ((i + 1) % 5 == 0) {
     inputs[i - calificacion].checked = true
